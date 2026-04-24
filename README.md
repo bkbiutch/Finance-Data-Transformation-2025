@@ -1,7 +1,7 @@
 # Finance-Data-Transformation-2025
 End-to-end financial data transformation project using Excel and Power Query to clean, map, and analyze 12 months of transaction data for actionable fiscal insights.
 # Finance Data Transformation Project 2025
-
+![Dashboard](screenshots/Dashboard.png)
 ## 📌 Project Overview
 This project serves as a comprehensive financial data pipeline designed to transform fragmented personal transaction logs into a centralized, analytical dataset. The goal was to move beyond simple bank statements to achieve full visibility into net worth, actual revenue, and savings discipline for the fiscal year 2025.
 
@@ -9,7 +9,10 @@ This project serves as a comprehensive financial data pipeline designed to trans
 The project began with the need to consolidate data from multiple digital wallets and bank accounts. 
 1. **Data Ingestion:** Exported raw transaction history (CSVs) from various financial institutions.
 2. **Standardization:** Developed a `Master` dataset to unify disparate date formats, transaction descriptions, and currency values.
-3. **Entity Mapping:** Built a custom `Mapping` table to translate obscure bank IDs and merchant codes into recognizable entities (e.g., converting ID `8652` to "Phone Utilities").
+   ![PowerQuery](screenshots/Power_Query.png)
+   ![PowerQuery](screenshots/Power_query2.png)
+4. **Entity Mapping:** Built a custom `Mapping` table to translate obscure bank IDs and merchant codes into recognizable entities (e.g., converting ID `8652` to "Phone Utilities").
+![Merge](screenshots/Merge.png)
 
 ## 🛠 Problems Encountered
 * **Transfer Inflation:** Initial reports showed artificially high income due to internal transfers between accounts. I had to implement a filtering logic to isolate "True Revenue."
